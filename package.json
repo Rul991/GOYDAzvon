@@ -9,7 +9,7 @@
     "watch:server": "nodemon -w src/server --exec \"npm run build:server\"",
     "build:css": "sass src/scss/index.scss public/css/index.css --style compressed",
     "watch:css": "nodemon --ext scss -w src/scss --exec \"npm run build:css\"",
-    "build": "npm run buld:client && npm run build:css",
+    "build": "npm run build:client && npm run build:css",
     "start": "npm run build && npm run start:server"
   },
   "keywords": [
