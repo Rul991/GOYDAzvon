@@ -1,0 +1,14 @@
+@use "./_back" as back;
+@use "./_fore" as fore;
+@use "./_props" as props;
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    // height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
