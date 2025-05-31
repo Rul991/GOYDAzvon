@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "main": "src/server/index.ts",
   "scripts": {
-    "build:client": "rollup -c",
+    "build:client": "npx rollup -c",
     "watch:client": "nodemon -w src/client --exec \"npm run build:client\"",
-    "start:server": "tsx .",
+    "start:server": "npx tsx .",
     "watch:server": "nodemon -w src/server --exec \"npm run build:server\"",
     "build:css": "sass src/scss/index.scss public/css/index.css --style compressed",
-    "watch:css": "nodemon --ext scss -w src/scss --exec \"npm run build:css\"",
+    "watch:css": "npx nodemon --ext scss -w src/scss --exec \"npm run build:css\"",
     "build": "npm run build:client && npm run build:css",
     "start": "npm run build && npm run start:server"
   },
